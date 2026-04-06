@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Home from "./Home";
-import axios from "axios";
 
-const Navbar = ({ onSelectCategory, onSearch }) => {
+
+const Navbar = () => {
   const getInitialTheme = () => {
     const storedTheme = localStorage.getItem("theme");
     return storedTheme ? storedTheme : "light-theme";
@@ -26,7 +26,7 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="https://telusko.com/">
-              Telusko
+             Luxentra
             </a>
             <button
               className="navbar-toggler"
